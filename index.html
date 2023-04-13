@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link href="css/myStyles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+   <nav class="navbar bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Currency Converter</a>
+    </div>
+   </nav>
+
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-6 form-content">
+                <h3>Currency Converter Calculator</h3>
+                <form class="form">
+                    <div class="row">
+                        <div class="col col-md-10">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="amountFrom" placeholder="Amount to be Converted" id="amountFrom">
+                            </div>
+                        </div>
+                        <div class="col col-md-2">
+                            <div class="form-group">
+                                <select class="form-select" id="select-currency">
+                                    <option value="Select">Select</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EURO">EURO</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="GBP">GBP</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="rate" placeholder="Rate" id="currency-rate" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-10">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Converted Currency" name="amountTo" id="amountTo" disabled>
+                            </div>
+                        </div>
+                        <div class="col col-md-2">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="currencyTo" value="FRW" id="currency-to" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-12">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-secondary" id="convert">Convert</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   </div>
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+   <script src="jquery/jquery.js"></script>
+   <script src="js/myScripts.js"></script>
+  </body>
+</html>
